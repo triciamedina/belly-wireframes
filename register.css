@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.register {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 24px;
+    position: relative;
+}
+
+.register section {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register p {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.0096em;
+    margin: 20px 0px;
+    padding: 0px 20px;
+}
+
+.primary {
+    padding-bottom: 84px;
+}
+
+.secondary {
+    position: absolute;
+    bottom: 0px;
+    padding: 30px;
+}
+
+.secondary p {
+    margin: 0px;
+}
+
+.logo {
+    border-radius: 50px;
+    margin: 30px 0px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0px;
+    letter-spacing: 0.0129em;
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    padding: 15px 48px;
+    background-color: #efefef;
+    border: 0px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button.submit {
+    margin: 30px 0px;
+}
+
+.text-link {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.0096em;
+    padding: 0px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.text-link:visited {
+    color: black;
+}
+
+.register-form {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.register-form input {
+    border: 1px solid rgba(0,0,0,50%);
+    border-radius: 4px;
+    margin: 10px 0px;
+    padding: 20px 15px;
+    width: 100%;
+}

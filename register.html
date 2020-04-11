@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Login</title>
-        <meta name="description" content="Login">
+        <title>Register</title>
+        <meta name="description" content="Register">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="register.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
         </header>
-        <main class="login">
+        <main class="register">
             <section class="primary">
                 <a href="#">
                     <img class="logo" src="https://dummyimage.com/70x70/efefef/909090.png&text=logo">
-                </a>                <h1>Welcome back</h1>
+                </a>
+                <h1>Welcome to Belly</h1>
                 <p>Belly is bill splitting calculator that lets you collaborate with friends in real-time.</p>
-                <form action="" class="login-form">
+                <form action="" class="register-form">
                     <div>
                         <!-- <label for="username">
                             <span>Username</span>
@@ -44,13 +45,25 @@
                         >
                     </div>
                     <div>
-                        <button class="button submit" type="submit">Sign in</button>
+                        <!-- <label for="password-confirm">
+                            <span>Password</span>
+                        </label> -->
+                        <input 
+                            type="password" 
+                            id="password-confirm" 
+                            name="password-confirm" 
+                            placeholder="Confirm password"
+                            aria-label="Confirm password"
+                        >
+                    </div>
+                    <div>
+                        <button class="button submit" type="submit">Sign up</button>
                     </div>
                 </form>
             </section>
             <section class="secondary">
-                <p>No account?</p>
-                <a class="text-link" href="#" class="text-link">Sign up</a>
+                <p>Already have an account?</p>
+                <a class="text-link" href="#" class="text-link">Sign in</a>
             </section>
         </main>
     </body>
