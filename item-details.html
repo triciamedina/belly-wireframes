@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Item Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="item-details.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <button class="close">
+                <img class="icon-x" src="images/icon-x.svg">
+            </button>
+        </header>
+        <main class="item-details">
+            <form action="" class="item-details-form">
+                <div class="input-container">
+                    <!-- <label for="item-name">
+                        <span>Item name</span>
+                    </label> -->
+                    <input 
+                        type="text" 
+                        id="item-name" 
+                        name="item-name" 
+                        placeholder="Item"
+                        aria-label="Item name"
+                    >
+                </div>
+                <div class="input-container">
+                    <!-- <label for="quantity">
+                        <span>Quantity</span>
+                    </label> -->
+                    <button class="button add-subtract">
+                        <img src="images/icon-minus.svg">
+                    </button>
+                    <input 
+                        type="text"
+                        id="quantity" 
+                        name="quantity" 
+                        placeholder="1"
+                    >
+                    <button class="button add-subtract">
+                        <img src="images/icon-plus.svg">
+                    </button>
+                </div>
+                <div class="input-container">
+                    <span>x</span>
+                </div>
+                <div class="input-container">
+                    <!-- <label for="price">
+                        <span>Price</span>
+                    </label> -->
+                    <span>$</span>
+                    <input 
+                        type="number"
+                        min="0"
+                        step=".01"
+                        id="price" 
+                        name="price" 
+                        placeholder="0.00"
+                    >
+                </div>
+                <div class="button-container">
+                    <button class="button delete" type="submit">
+                        Delete
+                    </button>
+                    <button class="button save" type="submit">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </main>
+        <!-- <footer>
+        </footer> -->
+    </body>
+</html>

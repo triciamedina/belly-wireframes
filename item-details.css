@@ -41,7 +41,7 @@ header {
 
 /* BODY */
 
-.bill-details {
+.item-details {
     background-color: #4f4f4f;
     height: 100%;
     display: flex;
@@ -49,7 +49,7 @@ header {
     align-items: center;
 }
 
-.bill-details-form {
+.item-details-form {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -64,22 +64,22 @@ header {
 
 .input-container {
     width: 100%;
-    text-align: right;
+    text-align: center;
 }
 
-.bill-details-form label {
+.item-details-form label {
     color: white;
     font-size: 16px;
     float: left;
 }
 
-.bill-details-form span {
+.item-details-form span {
     color: white;
     font-size: 16px;
     line-height: 68px;
 }
 
-.bill-details-form input {
+.item-details-form input {
     border: 0px;
     border-bottom: 1px solid white;
     background-color: transparent;
@@ -91,11 +91,11 @@ header {
     font-size: 16px;
 }
 
-.bill-details-form input::placeholder {
+.item-details-form input::placeholder {
     color: rgba(255, 255, 255, 20%);
 }
 
-.bill-details-form input[id="bill-name"] {
+.item-details-form input[id="item-name"] {
     font-size: 24px;
     font-weight: 500;
     width: 100%;
@@ -125,4 +125,19 @@ header {
 
 .button:visited {
     color: black;
+}
+
+.button.add-subtract {
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button.button.add-subtract img {
+    width: 24px;
+    height: 24px;
 }
