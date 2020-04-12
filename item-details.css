@@ -60,23 +60,30 @@ header {
     min-height: 100vh;
     padding: 0px 42px;
     max-width: 600px;
+    color: white;
+    font-size: 16px;
+    line-height: 68px;
 }
 
 .input-container {
     width: 100%;
     text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container.currency span {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-61px, 0);
 }
 
 .item-details-form label {
     color: white;
     font-size: 16px;
     float: left;
-}
-
-.item-details-form span {
-    color: white;
-    font-size: 16px;
-    line-height: 68px;
 }
 
 .item-details-form input {
@@ -102,6 +109,11 @@ header {
     margin-bottom: 50px;
 }
 
+.item-details-form .text-container {
+    line-height: 50px;
+    padding-top: 18px;
+}
+
 .button-container {
     position: absolute;
     bottom: 0; left: 0;
@@ -121,6 +133,8 @@ header {
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
+    border: 0px;
 }
 
 .button:visited {
@@ -135,9 +149,16 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    margin: 0px 12px;
 }
 
 .button.button.add-subtract img {
     width: 24px;
     height: 24px;
+}
+
+.button.delete {
+    color: white;
+    background: transparent;
 }
