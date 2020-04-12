@@ -122,6 +122,7 @@ footer {
     background-color: #efefef;
     border-radius: 4px;
     text-decoration: none;
+    display: inline-block;
 }
 
 .button:visited {
