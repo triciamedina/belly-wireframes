@@ -55,7 +55,7 @@ header {
     margin: 0px 10px;
 }
 
-.owned-by-me {
+.shared-with-me {
     padding-top: 80px;
 }
 
@@ -160,7 +160,6 @@ h2 {
 
 .add-button {
     position: relative;
-    margin-top: 30px;
 }
 
 .add-button span {
