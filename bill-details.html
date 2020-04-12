@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bill Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="bill-details.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <button class="close">
+                <img class="icon-x" src="images/icon-x.svg">
+            </button>
+        </header>
+        <main class="bill-details">
+            <form action="" class="bill-details-form">
+                <div class="input-container">
+                    <!-- <label for="bill-name">
+                        <span>Bill name</span>
+                    </label> -->
+                    <input 
+                        type="text" 
+                        id="bill-name" 
+                        name="bill-name" 
+                        placeholder="Bill name"
+                        aria-label="Bill name"
+                    >
+                </div>
+                <div class="input-container">
+                    <label for="discounts">
+                        <span>Discounts</span>
+                    </label>
+                    <span>$</span>
+                    <input 
+                        type="number"
+                        min="0"
+                        step=".01"
+                        id="discounts" 
+                        name="discounts" 
+                        placeholder="0.00"
+                    >
+                </div>
+                <div class="input-container">
+                    <label for="tax">
+                        <span>Tax</span>
+                    </label>
+                    <span>$</span>
+                    <input 
+                        type="number" 
+                        min="0"
+                        step=".01"
+                        id="tax" 
+                        name="tax" 
+                        placeholder="0.00"
+                    >
+                </div>
+                <div class="input-container">
+                    <label for="tip">
+                        <span>Tip</span>
+                    </label>
+                    <span>$</span>
+                    <input 
+                        type="number" 
+                        min="0"
+                        step=".01"
+                        id="tip" 
+                        name="tip" 
+                        placeholder="0.00"
+                    >
+                </div>
+                <div class="input-container">
+                    <label for="fees">
+                        <span>Fees</span>
+                    </label>
+                    <span>$</span>
+                    <input 
+                        type="number"
+                        min="0"
+                        step=".01"
+                        id="fees" 
+                        name="fees" 
+                        placeholder="0.00"
+                    >
+                </div>
+                <div class="input-container">
+                    <label for="total">
+                        <span>Total</span>
+                    </label>
+                    <span>$</span>
+                    <input 
+                        type="number"
+                        min="0"
+                        step=".01"
+                        id="total" 
+                        name="total" 
+                        placeholder="0.00"
+                    >
+                </div>
+                <div class="button-container">
+                    <button class="button next" type="submit">
+                        Next
+                    </button>
+                </div>
+            </form>
+        </main>
+        <!-- <footer>
+        </footer> -->
+    </body>
+</html>

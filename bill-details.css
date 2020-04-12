@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAV */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    z-index: 3;
+}
+
+.close {
+    border: 0px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translate(0, -50%);
+    background-color: transparent;
+}
+
+.icon-x {
+    height: 24px;
+    width: 24px;
+}
+
+/* BODY */
+
+.bill-details {
+    background-color: gray;
+    height: 100%;
+}
+
+.bill-details-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 100vh;
+    padding: 0px 42px;
+}
+
+.input-container {
+    width: 100%;
+    text-align: right;
+}
+
+.bill-details-form label {
+    color: white;
+    font-size: 16px;
+    float: left;
+}
+
+.bill-details-form span {
+    color: white;
+    font-size: 16px;
+    line-height: 68px;
+}
+
+.bill-details-form input {
+    border: 0px;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    margin: 10px 0px;
+    padding: 15px 10px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.bill-details-form input::placeholder {
+    color: rgba(255, 255, 255, 20%);
+}
+
+.bill-details-form input[id="bill-name"] {
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px 0px;
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    padding: 15px 48px;
+    background-color: #efefef;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:visited {
+    color: black;
+}
