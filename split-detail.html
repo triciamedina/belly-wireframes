@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bill Editor - Split Detail</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="split-detail.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <button class="back">
+                <img class="icon-chevron-left" src="images/icon-chevron-left.svg">
+            </button>
+            <button class="share">
+                <img class="icon-share" src="images/icon-share.svg">
+            </button>
+        </header>
+        <main class="bill-editor">
+            <div class="bill-overview">
+                <a class="bill-name" href="#">
+                    <div class="emoji">
+                        &#127791
+                    </div>
+                    <h1>Bill name</h1>
+                </a>
+                <ul class="ItemList">
+                    <li class="Item">
+                        <a class="edit-item" href="#">
+                            <h2>
+                                <span class="quantity">1x</span>
+                                Item name
+                            </h2>
+                        </a>
+                        <div class="edit-share">
+                            <!-- <p>Split</p> -->
+                            <ul class="avatar-list">
+                                <li class="avatar blue">
+                                    TR
+                                </li>
+                                <li class="avatar pink">
+                                    AA
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="Item">
+                        <a class="edit-item" href="#">
+                            <h2>
+                                <span class="quantity">3x</span>
+                                Item name
+                            </h2>
+                        </a>
+                        <div class="edit-share" href="#">
+                            <!-- <p>Split</p> -->
+                            <ul class="avatar-list">
+                                <li class="avatar blue">
+                                    TR
+                                </li>
+                                <li class="avatar pink">
+                                    AA
+                                </li>
+                                <li class="avatar purple">
+                                    SA
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="Item">
+                        <a class="edit-item" href="#">
+                            <h2>
+                                <span class="quantity">1x</span>
+                                Item name
+                            </h2>
+                        </a>
+                        <div class="edit-share" href="#">
+                            <p>Split</p>
+                            <!-- <ul class="avatar-list">
+                                <li class="avatar blue">
+                                    TR
+                                </li>
+                                <li class="avatar pink">
+                                    AA
+                                </li>
+                                <li class="avatar purple">
+                                    SA
+                                </li>
+                            </ul> -->
+                        </div>
+                    </li>
+                </ul>
+                <a class="add-item" href="#">
+                    <img src="images/icon-plus.svg" alt="">
+                    Add
+                </a>
+                <a class="bill-totals" href="#">
+                    <div class="col1">
+                        <h2>
+                            Discounts 
+                            <span class="currency">$</span>
+                            <span class="amount">5.30</span>
+                        </h2>
+                    </div>
+                    <div class="col2">
+                        <h2>
+                            Tax
+                            <span class="currency">$</span>
+                            <span class="amount">4.51</span>
+                        </h2>
+                        <h2>
+                            Tip
+                            <span class="currency">$</span>
+                            <span class="amount">7.95</span>
+                        </h2>
+                        <h2>
+                            Fees
+                            <span class="currency">$</span>
+                            <span class="amount">12.94</span>
+                        </h2>
+                        <h2>
+                            Total
+                            <span class="currency">$</span>
+                            <span class="amount">73.10</span>
+                        </h2>
+                    </div>
+                </a>
+            </div>
+            <div class="bill-split">
+                <div class="split-detail">
+                    <button class="back">
+                        <img class="icon-chevron-left" src="images/icon-chevron-left.svg">
+                    </button>
+                    <div class="split-name">
+                        <div class="avatar purple">
+                            SA
+                        </div>
+                        <h2>Sam</h2>
+                    </div>
+                    <ul class="split-list">
+                        <li>
+                            <ul class="items-list">
+                                <li>
+                                    Item 1
+                                    <span class="currency">$</span>
+                                    <span class="amount">
+                                        3.00
+                                    </span>
+                                </li>
+                                <li>
+                                    Item 2
+                                    <span class="currency">$</span>
+                                    <span class="amount">
+                                        3.80
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="totals-list">
+                                <li>
+                                    Items subtotal
+                                    <span class="currency">$</span>
+                                    <span class="amount">
+                                        6.80
+                                    </span>
+                                </li>
+                                <li>
+                                    Tax
+                                    <span class="currency">$</span>
+                                    <span class="amount">
+                                        0.58
+                                    </span>
+                                </li>
+                                <li>
+                                    Fees
+                                    <span class="currency">$</span>
+                                    <span class="amount">
+                                        4.51
+                                    </span>
+                                </li>
+                                <li>
+                                    Discounts
+                                    <span class="currency">$</span>
+                                    <span class="amount">
+                                        (1.77)
+                                    </span>
+                                </li>
+                                <li>
+                                    Total
+                                    <span class="currency">$</span>
+                                    <span class="amount">
+                                        9.92
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="currently-viewing">
+                <h2>Currently viewing</h2>
+                <ul class="view-list">
+                    <li class="avatar blue">
+                        TR
+                    </li>
+                    <li class="avatar pink">
+                        AA
+                    </li>
+                    <li class="avatar purple">
+                        SA
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
