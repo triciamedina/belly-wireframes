@@ -90,6 +90,10 @@ h2 {
     background-color: #EBE5FC;
 }
 
+.Bill:hover .thumbnail {
+    background-color: white;
+}
+
 .Bill h3,
 .Bill p {
     font-size: 14px;
@@ -122,6 +126,10 @@ h2 {
     height: 38px;
     border-radius: 4px;
     margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 20%);
 }
 
 .Bill .details {

@@ -59,6 +59,7 @@ header {
     width: 100%;
     min-height: 100vh;
     padding: 0px 42px;
+    padding-bottom: 50px;
     max-width: 600px;
 }
 
@@ -72,12 +73,6 @@ header {
     color: white;
     font-size: 16px;
     line-height: 68px;
-}
-
-.input-container.currency span {
-    position: absolute;
-    top: 0; right: 0;
-    transform: translate(-102px, 0);
 }
 
 .bill-details-form label {
@@ -108,6 +103,27 @@ header {
     font-weight: 500;
     width: 100%;
     margin-bottom: 50px;
+}
+
+.bill-details-form input[id="bill-emoji"] {
+    background-color: white;
+    width: 75px;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+.input-container.emoji {
+    text-align: center;
+}
+
+.bill-details-form input[id="bill-emoji"]::placeholder {
+    color: unset;
+}
+
+.input-container.currency span {
+    position: absolute;
+    top: 0; right: 0;
+    transform: translate(-102px, 0);
 }
 
 .button-container {
