@@ -107,6 +107,7 @@ header {
 }
 
 .Item {
+    position: relative;
     display: flex;
     width: 100%;
     background-color: #f4f4f4;
@@ -316,4 +317,134 @@ header {
     padding: 0px;
     margin: 0px;
     margin-left: 20px;
+}
+
+.share-form {
+    position: absolute;
+    top: 0; right: 0;
+    background-color: #4f4f4f;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 20%);
+    width: 100%;
+    max-width: 340px;
+}
+
+.close {
+    border: 0px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background-color: transparent;
+}
+
+.icon-x {
+    height: 24px;
+    width: 24px;
+}
+
+.share-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 60px;
+}
+
+.share-item {
+    position: relative;
+    padding: 12px 18px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.share-item .avatar {
+    margin-left: 0px;
+}
+
+.share-item h3 {
+    position: absolute;
+    top: 50%; left: 70px;
+    transform: translate(0, -50%);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.0096em;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+.share-count {
+    display: flex;
+    align-items: center;
+}
+
+.share-count .count {
+    color: white;
+    margin-right: 15px;
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    padding: 15px 48px;
+    background-color: #efefef;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: 0px;
+}
+
+.button:visited {
+    color: black;
+}
+
+.button.add-subtract {
+    width: 34px;
+    height: 34px;
+    padding: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.button.button.add-subtract img {
+    width: 20px;
+    height: 20px;
+}
+
+.share-form .add-item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid white;
+    margin: 0px;
+    padding-left: 55px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 60px;
+    color: white;
+    cursor: pointer;
+}
+
+.share-form .add-item:hover {
+    background-color: #EBE5FC;
+    color: black;
+}
+
+.share-form .button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
 }
